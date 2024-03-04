@@ -1,7 +1,6 @@
 //techsweep.scs 
-include  "./models/28nm/toplevel.scs" section=top_tt
+include  "/home/techlib/tsmc180/PDK/PDK_Install/tsmc18/../models/spectre/ce018g_3d3_v1d0_usage.scs" section=tt_lib
 include "techsweep_params.scs" 
-include "./models/28nm/toplevel.scs" section=pre_simu 
 save mn 
 save mp 
 parameters gs=0 ds=0 
@@ -14,8 +13,8 @@ vgsp     (vgp 0)         vsource dc=-gs
 vbsp     (vbp 0)         vsource dc=sb  
 
 //NOTE: YOUR MODELS SHOULD BE SET UP SUCH THAT THE STRESS PARAMS (SA, SB, etc.) ARE AUTOMATICALLY COMPUTED
-mn       (vdn vgn 0 vbn) nch_lvt_mac  l=length*1e-6 w=4e-6 nf=4 
-mp       (vdp vgp 0 vbp) pch_lvt_mac  l=length*1e-6 w=4e-6 nf=4 
+mn       (vdn vgn 0 vbn) nch_mac  l=length*1e-6 w=4e-6 nf=4 
+mp       (vdp vgp 0 vbp) pch_mac  l=length*1e-6 w=4e-6 nf=4 
 
 simOptions options gmin=1e-13 reltol=1e-4 vabstol=1e-6 iabstol=1e-10 temp=27 tnom=27 rawfmt=psfbin rawfile="./techsweep.raw" 
 sweepvds sweep param=ds start=0 stop=9.000000e-01 step=2.500000e-02 { 

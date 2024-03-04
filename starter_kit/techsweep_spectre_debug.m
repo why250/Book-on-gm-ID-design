@@ -9,7 +9,7 @@ clearvars;
 close all;
 
 % Load configuration
-c = techsweep_config_psp_65_spectre;
+c = techsweep_config_tsmc_180_spectre;
 %c = techsweep_config_bsim4_28_spectre;
 
 % Write simulation parameters

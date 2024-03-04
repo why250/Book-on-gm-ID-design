@@ -1,0 +1,6 @@
+model library
+/home/techlib/tsmc180/PDK/PDK_Install/tsmc18/../models/spectre/ce018g_3d3_v1d0_usage.scs
+
+spectre matlab script
+/export/SoftWare/Cadence/LIBERATE20.10.674/tools.lnx86/spectre/matlab
+

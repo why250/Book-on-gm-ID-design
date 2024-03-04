@@ -8,7 +8,7 @@ close all;
 
 % Load configuration
 %c = techsweep_config_psp_65_spectre;
-c = techsweep_config_bsim4_28_spectre;
+c = techsweep_config_tsmc_180_spectre;
 
 % Write sweep info
 nch.INFO   = c.modelinfo;
@@ -60,7 +60,7 @@ for i = 1:length(c.LENGTH)
         % Read and store results
         for k = 1:length(c.n)
             params_n = c.n{k};
-            struct_n = cds_srr(c.outfile, c.sweep, params_n{1});
+            struct_n = cds_srr(c.outfile, c.sweep, params_n{1});%matlab seting path should contain the cds_srr founction.
             values_n = struct_n.(params_n{2});
             params_p = c.p{k};
             struct_p = cds_srr(c.outfile, c.sweep, params_p{1});
@@ -88,5 +88,8 @@ for i = 1:length(c.LENGTH)
     end
 end
 
+
 save(c.savefilen, 'nch');
 save(c.savefilep, 'pch');
+
+

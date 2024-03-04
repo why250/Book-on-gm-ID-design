@@ -1,0 +1,25 @@
+
+Spectre (R) Circuit Simulator
+Version 21.1.0.303.isr5 64bit -- 2 Mar 2022
+Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered
+        trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: master   Host: icpc   HostID: 966ACEFF   PID: 77929
+Memory  available: 8.6704 GB  physical: 12.0741 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: AMD Ryzen 7 5800H with Radeon Graphics
+All processors running at 3193.9 MHz
+        Socket: Processors
+        0:       0
+        
+System load averages (1min, 5min, 15min) : 81.0 %, 32.0 %, 75.0 %
+This is a virtual machine
+
+
+Error found by spectre.
+    ERROR (SPECTRE-132): The input file 'techsweep.scs' has been re-specified as 'techsweep.out'. Cannot run the simulation
+        because more than one input file has been specified at the command line. Specify only one input file and rerun the
+        simulation.
+        Type `spectre -help' in a terminal window for more information.
